@@ -4,7 +4,7 @@
   
 
 ## Description
-A continuation assignment from Vanderbilt University's bootcamp where the assignemnt was to learn how to implmenet the backend of a tech news site with Python. The site had starter code for the frontend built with Node.js. My task was to create the models, routes, seeds file, and util folder.
+A continuation assignment from Vanderbilt University's bootcamp where the assignemnt was to learn how to implmenet the backend of a tech news site with Python. The site had starter code for the frontend built with Node.js. The site involves signing up and users can create posts, edit posts, delete posts, comment, and upvote any post. My task was to create the models, routes, seeds file, and util folder.
 
 
 ## Table of Content
@@ -19,10 +19,10 @@ A continuation assignment from Vanderbilt University's bootcamp where the assign
 -[Acknowledgement](#Acknowledgement)
 -[Questions](#Questions)
 
-<img src=""/>
-<img src=""/>
-<img src=""/>
-<img src=""/>
+<img src="./app/static/images/homepage.png"/>
+<img src="./app/static/images/dashboard.png"/>
+<img src="./app/static/images/comment.png"/>
+<img src="./app/static/images/login.png"/>
 
 ## Process
 The process included creating the virtual environment where dependencies are installed and where the development process occurs. I installed Flask for the background framework that is used similar to Express.js. App/_init_.py includes the function to create the app itself by setting the paths, secret key, and registering the routes and custom filters. The database is stored in the MySQL database platform. The db/_init.py initiates the database, connects to session, and closes the session. An important global variable known as g holds the current session so second sessions are not created in one instance. Four models were created for the site: User, Post, Comment and Vote. Several routes were completed for the app including to home routes: signup, login, loguout, and dashboard routes: get posts, edit posts. Users created were made in data sections known as dictionaries that resemble objects in JS. Try, except blocks were used like try, catch blocks. Of course, the app cannot be completed with the user authentication decorator for certain routes to be accessed. The completion of this assignment concluded with deployment to Heroku.
